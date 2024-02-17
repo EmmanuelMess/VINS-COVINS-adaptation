@@ -605,7 +605,7 @@ bool Estimator::initialStructure()
             //cout << "frame g " << tmp_g.transpose() << endl;
         }
         var = sqrt(var / ((int)all_image_frame.size() - 1));
-        //ROS_WARN("IMU variation %f!", var);
+        ROS_WARN("IMU variation %f!", var);
         if(var < 0.25)
         {
             ROS_INFO("IMU excitation not enouth!");
